@@ -9,10 +9,10 @@ class Strategy {
           stopLossThreshold_(slt),
           actionRatio_(ar) {}
 
-      Instruction attemptToMakeTrade(Action, float);
+      virtual Instruction attemptToMakeTrade(Action, float) = 0;
     protected:
-      Instruction tryToBuy(float);
-      Instruction tryToSell(float);
+      virtual Instruction tryToBuy(float) = 0;
+      virtual Instruction tryToSell(float) = 0;
 
       float dipThreshold_;
       float upwardTrendThreshold_;
