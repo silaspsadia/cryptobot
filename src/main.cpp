@@ -16,6 +16,7 @@ int main() {
 
   Simulation simulation(ss, b1, startingPrice);
   simulation.run();
+  simulation.printState();
 
   return 0;
 }

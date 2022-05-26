@@ -18,6 +18,7 @@ class Simulation {
         _maxTotalValue(0) {}
 
     void run();
+    void printState();
   private:
     int getRandomDelta();
 

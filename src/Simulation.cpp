@@ -40,3 +40,9 @@ void Simulation::run() {
     _curIteration++;
   }
 }
+
+void Simulation::printState() {
+  std::cout << "END OF SIMULATION" << std::endl;
+  std::cout << "Iterations: " << _curIteration << std::endl;
+  std::cout << "Max Account Valu: " << _maxTotalValue << std::endl;
+}
